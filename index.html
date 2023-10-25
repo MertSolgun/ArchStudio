@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arch Studio</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="font-symbol-of-letter-a_icon-icons.com_73556.png"
+    />
+    <!-- Fontawesome Cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Goole Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Swiper Cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-item desktop">
+        <div class="hero">
+          <div class="hero-line">
+            <div class="ln"></div>
+            <div class="home">
+              <p>HOME</p>
+            </div>
+          </div>
+        </div>
+        <img src="./img/archlogo.svg" alt="" />
+        <a href="#">Porfolio</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="nav-mobile" style="display: none">
+        <img src="./img/archlogo.svg" alt="" />
+        <i class="fas fa-bars mobileBar"></i>
+      </div>
+      <div class="nav-menu" style="display: none">
+        <a href="#">Porfolio</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiperContent">
+            <h1>Federal II Tower</h1>
+            <p>
+              A sequel theme project for a tower originally built in the 1800s.
+              We achieved this with a striking look of brutal minimalism with
+              modern touches.
+            </p>
+          </div>
+          <img src="./img/image-hero-federal.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <div class="swiperContent">
+            <h1>Project Paramour</h1>
+            <p>
+              Project made for an art museum near Southwest London. Project
+              Paramour is a statement of bold, modern architecture.
+            </p>
+          </div>
+          <img src="/img/image-hero-paramour.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <div class="swiperContent">
+            <h1>Seraph Station</h1>
+            <p>
+              The Seraph Station project challenged us to design a unique
+              station that would transport people through time. The result is a
+              fresh and futuristic model inspired by space stations.
+            </p>
+          </div>
+          <img src="./img/image-hero-seraph.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <div class="swiperContent">
+            <h1>Trinity Bank Tower</h1>
+            <p>
+              Trinity Bank challenged us to make a concept for a 84 story
+              building located in the middle of a city with a high earthquake
+              frequency. For this project we used curves to blend design and
+              stability to meet our objectives.
+            </p>
+          </div>
+          <img src="./img/image-hero-trinity.jpg" alt="" id="4" />
+        </div>
+      </div>
+      <div class="swiper-cntrl">
+        <p data-slide="0">01</p>
+        <p data-slide="1">02</p>
+        <p data-slide="2">03</p>
+        <p data-slide="3">04</p>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="bigwelcome">Welcome</div>
+      <div class="left-side">
+        <h1>Welcome to Arch Studio</h1>
+        <p>
+          We have a unique network and skillset to help bring your projects to
+          life. Our small team of highly skilled individuals combined with our
+          large network put us in a strong position to deliver exceptional
+          results. <br /><br />
+          Over the past 10 years, we have worked on all kinds of projects. From
+          stations to high-rise buildings, we create spaces that inspire and
+          delight. <br /><br />
+          We work closely with our clients so that we understand the intricacies
+          of each project. This allows us to work in harmony the surrounding
+          area to create truly stunning projects that will stand the test of
+          time.
+        </p>
+      </div>
+      <div class="rigt-side">
+        <img src="./img/image-welcome.jpg" alt="" />
+      </div>
+    </main>
+
+    <section class="small-team">
+      <div class="small-img">
+        <img src="./img/image-small-team.jpg" alt="" />
+        <div class="small-content">
+          <h1>Small Team,<br />big ideas</h1>
+          <button class="aboutBtn">
+            About us <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <div class="featur-title">
+        <h1 class="feat">Featured</h1>
+        <button class="seeallBtn">
+          <a href="#">See all <i class="fa-solid fa-arrow-right-long"></i></a>
+        </button>
+      </div>
+      <div class="feature-img">
+        <div class="feat1Img featimg">
+          <a href="#">
+            <img src="./img/feat1.jpeg" alt="" />
+          </a>
+          <div class="feat1">1</div>
+          <div class="bottomContent">
+            <h1>Project Del Sol</h1>
+            <p>View All Projects</p>
+          </div>
+        </div>
+        <div class="feat2Img featimg">
+          <a href="">
+            <img src="./img/featur2.jpg" alt="" />
+          </a>
+          <div class="feat2">2</div>
+          <div class="bottomContent">
+            <h1>228B Tower</h1>
+            <p>View All Projects</p>
+          </div>
+        </div>
+        <div class="feat3Img featimg">
+          <a href="">
+            <img src="./img/featur3.jpg" alt="" />
+          </a>
+          <div class="feat3">3</div>
+          <div class="bottomContent">
+            <h1>Le Prototype</h1>
+            <p>View All Projects</p>
+          </div>
+        </div>
+        <div>
+          <button class="seeallBtnMobile" style="display: none">
+            <a href="#">See all <i class="fa-solid fa-arrow-right-long"></i></a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="left-foot">
+        <h3>Arch</h3>
+      </div>
+      <div class="right-foot">
+        <ul>
+          <li>
+            <a href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li class="footerMobilebtn">
+            <a href="www.google.com">
+              <button>
+                See Our Portfolio <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </a>
+          </li>
+        </ul>
+        <button class="desktopBtn">
+          See Our Portfolio <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+      </div>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
