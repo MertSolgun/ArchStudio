@@ -83,15 +83,18 @@ window.addEventListener("scroll", function () {
 //Mobilemenu
 
 const navMenu = document.querySelector(".nav-menu");
-
 const mobileBar = document.querySelector(".mobileBar");
+
+let isNavMenuOpen = false;
 
 function toggleNavMenu() {
   if (window.innerWidth <= 600) {
-    if (navMenu.style.display === "none" || navMenu.style.display === "") {
-      navMenu.style.display = "flex";
-    } else {
+    if (isNavMenuOpen) {
       navMenu.style.display = "none";
+      isNavMenuOpen = false;
+    } else {
+      navMenu.style.display = "flex";
+      isNavMenuOpen = true;
     }
   } else {
     navMenu.style.display = "none";
@@ -100,6 +103,9 @@ function toggleNavMenu() {
 
 mobileBar.addEventListener("click", toggleNavMenu);
 
-window.addEventListener("resize", toggleNavMenu);
-
-toggleNavMenu();
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 600) {
+    navMenu.style.display = "none";
+    isNavMenuOpen = false;
+  }
+});
